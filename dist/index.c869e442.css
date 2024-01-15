@@ -1,0 +1,876 @@
+html, body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+@media screen and (width >= 420px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 9%;
+    position: absolute;
+    box-shadow: 0 3px 6px #00000029;
+  }
+
+  .navbar__header {
+    color: #08a6e4;
+    letter-spacing: 0;
+    width: 10%;
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 300;
+    position: relative;
+    top: 25%;
+    left: 10%;
+  }
+
+  .navbar__hamburgerMenu input {
+    display: none;
+  }
+
+  .navbar__hamburgerMenu__navbar {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+  }
+
+  .navbar__hamburgerMenu__navbar__menu {
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    margin-left: 50%;
+    list-style: none;
+    display: flex;
+  }
+
+  .navbar__hamburgerMenu__navbar__menu a {
+    text-transform: uppercase;
+    letter-spacing: 3.28px;
+    color: #a5a5a5;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .navbar__hamburgerMenu__navbar__menu a:hover {
+    color: #000;
+    border-bottom: 4px solid #08a6e4;
+  }
+
+  .mainContent {
+    text-align: center;
+    width: 100%;
+    height: 14.4%;
+    position: relative;
+    top: 20%;
+  }
+
+  .mainContent__title {
+    text-align: center;
+    color: #000;
+    margin-bottom: 1%;
+    font-family: Raleway;
+    font-size: 49px;
+    font-weight: bold;
+  }
+
+  .mainContent__description {
+    text-align: center;
+    color: #000;
+    margin-bottom: 30px;
+    font-family: Open Sans;
+    font-size: 16px;
+  }
+
+  .mainContent__button {
+    color: #fff;
+    text-align: center;
+    background-color: #08a6e4;
+    border: #0000;
+    border-radius: 40px;
+    width: 30%;
+    height: 60%;
+    font: bold 16px / 22px Open Sans;
+    box-shadow: 5px 10px 14px #07ace629;
+  }
+
+  .content__image {
+    background-image: url("Background.96fc9b9b.png");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+    position: relative;
+    top: 30%;
+    overflow: hidden;
+  }
+
+  .content {
+    flex-wrap: wrap;
+    place-content: center space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    margin: 0;
+    display: flex;
+    position: relative;
+    top: 27%;
+  }
+
+  .content__entries {
+    width: 12%;
+    height: 30%;
+  }
+
+  .content__entries__backround {
+    background-color: #fb3b64;
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+  }
+
+  .content__entries__backround__number {
+    color: #000;
+    text-align: center;
+    letter-spacing: 5.96px;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    top: 15px;
+    right: 30%;
+  }
+
+  .content__entries__backround__text {
+    color: #a5a5a5;
+    width: 100px;
+    font: 17px / 20px Raleway;
+    position: relative;
+    top: 25px;
+    right: 20%;
+  }
+
+  .content__entries__backround__image {
+    width: 44px;
+    height: 52px;
+    position: relative;
+    left: 40%;
+  }
+
+  .content__products {
+    width: 12%;
+    height: 30%;
+  }
+
+  .content__products__backround {
+    background-color: #08a6e4;
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+  }
+
+  .content__products__backround__image {
+    width: 66px;
+    height: 37px;
+    position: relative;
+    top: 15px;
+    left: 20px;
+  }
+
+  .content__products__backround__number {
+    color: #000;
+    text-align: center;
+    letter-spacing: 6px;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    top: 25px;
+    right: 33px;
+  }
+
+  .content__products__backround__text {
+    color: #a5a5a5;
+    text-align: center;
+    width: 150px;
+    font: 17px / 20px Raleway;
+    position: relative;
+    top: 35px;
+    right: 45px;
+  }
+
+  .content__posts {
+    width: 12%;
+    height: 30%;
+  }
+
+  .content__posts__backround {
+    background-color: #55dfb4;
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+  }
+
+  .content__posts__backround__image {
+    width: 52px;
+    height: 48px;
+    position: relative;
+    top: 8px;
+    left: 35px;
+  }
+
+  .content__posts__backround__number {
+    color: #000;
+    text-align: center;
+    letter-spacing: 6px;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    top: 13px;
+    right: 7px;
+  }
+
+  .content__posts__backround__text {
+    color: #a5a5a5;
+    text-align: center;
+    width: 100px;
+    font: 17px / 20px Raleway;
+    position: relative;
+    top: 20px;
+    right: 10px;
+  }
+
+  .contentTitle {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+  }
+
+  .contentTitle__text {
+    text-align: center;
+    color: #000;
+    width: 70%;
+    height: auto;
+    font: bold 36px / 35px Raleway;
+    left: 15%;
+    overflow: hidden;
+  }
+
+  .container {
+    border: 1px solid #e8e9ed;
+    border-radius: 5px;
+    width: 70%;
+    height: 44%;
+    position: relative;
+    top: 30%;
+    left: 15%;
+  }
+
+  .container__image {
+    background-image: url("Macbook.a1f4b436.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35%;
+    height: 65%;
+    position: relative;
+    top: 90px;
+    left: 60%;
+  }
+
+  .container__image:before {
+    content: "";
+    color: red;
+    z-index: -1;
+    background-color: #fb3b64;
+    border-radius: 41px;
+    width: 50%;
+    height: 70%;
+    display: inline-block;
+    position: relative;
+    bottom: 15%;
+    left: 55%;
+    rotate: 45deg;
+  }
+
+  .container__title {
+    color: #000;
+    width: 45%;
+    font: bolder 36px / 35px Raleway;
+    position: relative;
+    bottom: 44%;
+    left: 4%;
+  }
+
+  .container__text {
+    color: #000;
+    text-align: left;
+    width: 47%;
+    font: 16px / 22px Open Sans;
+    position: relative;
+    bottom: 35%;
+    left: 4%;
+  }
+
+  .container__underline {
+    background-color: #fb3b64;
+    border: 1px solid #fb3b64;
+    width: 35%;
+    height: 2px;
+    position: relative;
+    bottom: 22%;
+    left: 4%;
+  }
+
+  .second__container {
+    border: 1px solid #e8e9ed;
+    border-radius: 5px;
+    width: 70%;
+    height: 44%;
+    position: relative;
+    top: 35%;
+    left: 15%;
+  }
+
+  .second__container__image {
+    background-image: url("iPhone2.5d3996c3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40%;
+    height: 80%;
+    position: relative;
+    top: 12%;
+    left: 8%;
+  }
+
+  .second__container__image:before {
+    content: "";
+    z-index: -1;
+    background-color: #07ace6;
+    border-radius: 50%;
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    bottom: 8%;
+    right: 5%;
+  }
+
+  .second__container__title {
+    color: #000;
+    width: 34%;
+    font: bolder 36px / 35px Raleway;
+    position: relative;
+    bottom: 65%;
+    left: 65%;
+  }
+
+  .second__container__text {
+    color: #000;
+    width: 30%;
+    font: 16px / 22px Open Sans;
+    position: relative;
+    bottom: 55%;
+    left: 65%;
+  }
+
+  .second__container__underline {
+    background-color: #08a6e4;
+    border: 1px solid #08a6e4;
+    width: 25%;
+    height: 2px;
+    position: relative;
+    bottom: 45%;
+    left: 65%;
+  }
+
+  .third__container {
+    border: 1px solid #e8e9ed;
+    border-radius: 5px;
+    width: 70%;
+    height: 44%;
+    position: relative;
+    top: 40%;
+    left: 15%;
+  }
+
+  .third__container__image {
+    background-color: #55dfb4;
+    border: 1px solid #e8e9ed;
+    border-radius: 5px;
+    width: 35%;
+    height: 100%;
+    position: relative;
+    bottom: 31.5%;
+    left: 65%;
+  }
+
+  .third__container__image__backround {
+    width: 90%;
+    height: 65%;
+    position: relative;
+    top: 30%;
+  }
+
+  .third__container__underline {
+    background-color: #55dfb4;
+    border: 1px solid #55dfb4;
+    width: 25%;
+    height: 2px;
+    position: relative;
+    bottom: 55%;
+    left: 4%;
+  }
+
+  .third__container__title {
+    color: #000;
+    width: 56%;
+    font: bolder 36px / 35px Raleway;
+    position: relative;
+    top: 20%;
+    left: 4%;
+  }
+
+  .third__container__text {
+    color: #000;
+    width: 55%;
+    font: 16px / 22px Open Sans;
+    position: relative;
+    top: 30%;
+    left: 4%;
+  }
+
+  .pricingHeader {
+    text-align: center;
+    color: #000;
+    height: 7%;
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    top: 70%;
+    left: 0%;
+  }
+
+  .pricing {
+    flex-wrap: wrap;
+    place-content: center space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    position: relative;
+    top: 65%;
+    left: 10%;
+  }
+
+  .pricing__basic {
+    border: 1px solid #fb3b64;
+    border-radius: 18px;
+    width: 20%;
+    height: 70%;
+  }
+
+  .pricing__basic__title {
+    color: #13253b;
+    width: 38%;
+    height: 5%;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    top: 5%;
+    left: 40%;
+  }
+
+  .pricing__basic__price {
+    color: #fb3b64;
+    text-align: center;
+    width: 25%;
+    height: 10%;
+    font-family: Open Sans;
+    font-size: 46px;
+    font-weight: 300;
+    position: relative;
+    top: 10%;
+    left: 35%;
+  }
+
+  .pricing__basic__content {
+    color: #000;
+    text-align: center;
+    width: 60%;
+    font-family: Open Sans;
+    font-size: 14px;
+    line-height: 3.5;
+    position: relative;
+    top: 20%;
+    left: 22%;
+  }
+
+  .pricing .checkmark {
+    position: relative;
+    right: 5%;
+  }
+
+  .pricing .pricing__basic:before {
+    content: "Begin";
+    color: #fff;
+    letter-spacing: 1px;
+    background-color: #eb476e;
+    border-radius: 23px;
+    width: 200px;
+    height: 200px;
+    padding: 5% 20%;
+    font-family: Open Sans;
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    top: 98%;
+    left: 23%;
+  }
+
+  .pricing__professional {
+    border: 1px solid #07ace6;
+    border-radius: 18px;
+    width: 27%;
+    height: 80%;
+    box-shadow: 5px 10px 27px #07ace629;
+  }
+
+  .pricing__professional__title {
+    text-align: center;
+    color: #13253b;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    top: 5%;
+  }
+
+  .pricing__professional .professionalPrice {
+    color: #07ace6;
+    text-align: center;
+    width: 25%;
+    height: 10%;
+    font-family: Open Sans;
+    font-size: 46px;
+    font-weight: 300;
+    position: relative;
+    top: 10%;
+    left: 34%;
+  }
+
+  .pricing__professional__text {
+    color: #13253b;
+    width: 25%;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: bolder;
+    position: relative;
+    top: 14%;
+    left: 40%;
+  }
+
+  .pricing__professional__content {
+    color: #000;
+    text-align: center;
+    width: 60%;
+    font-family: Open Sans;
+    font-size: 14px;
+    line-height: 3.5;
+    position: relative;
+    top: 20%;
+    left: 22%;
+  }
+
+  .pricing .pricing__professional:before {
+    content: "Begin";
+    color: #fff;
+    letter-spacing: 1px;
+    background-color: #07ace6;
+    border-radius: 23px;
+    width: 200px;
+    height: 200px;
+    padding: 4.3% 17%;
+    font-family: Open Sans;
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    top: 98%;
+    left: 26%;
+    box-shadow: 5px 10px 14px #07ace629;
+  }
+
+  .pricing__premium {
+    border: 1px solid #55dfb4;
+    border-radius: 18px;
+    width: 20%;
+    height: 70%;
+  }
+
+  .pricing__premium .premiumTitle {
+    text-align: center;
+    color: #13253b;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    top: 5%;
+  }
+
+  .pricing__premium .premiumPrice {
+    color: #55dfb4;
+    text-align: center;
+    width: 25%;
+    height: 10%;
+    font-family: Open Sans;
+    font-size: 46px;
+    font-weight: 300;
+    position: relative;
+    top: 10%;
+    left: 37%;
+  }
+
+  .pricing__premium .premiumText {
+    position: relative;
+    left: 40%;
+  }
+
+  .pricing__premium__content {
+    color: #000;
+    text-align: center;
+    width: 60%;
+    font-family: Open Sans;
+    font-size: 14px;
+    line-height: 3.5;
+    position: relative;
+    top: 22%;
+    left: 22%;
+  }
+
+  .pricing .pricing__premium:before {
+    content: "Begin";
+    color: #fff;
+    letter-spacing: 1px;
+    background-color: #55dfb4;
+    border-radius: 23px;
+    width: 200px;
+    height: 200px;
+    padding: 4.3% 17%;
+    font-family: Open Sans;
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    top: 98%;
+    left: 26%;
+    box-shadow: 5px 10px 14px #07ace629;
+  }
+
+  .contact {
+    position: relative;
+    top: 90%;
+    left: 25%;
+  }
+
+  .contact h2 {
+    color: #000;
+    width: 25%;
+    font-family: Raleway;
+    font-size: 49px;
+    font-weight: normal;
+  }
+
+  .contact__text {
+    color: #000;
+    width: 20%;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: normal;
+    position: relative;
+    top: 15px;
+  }
+
+  .contact__methods {
+    display: flex;
+  }
+
+  .contact__methods__mail {
+    display: flex;
+    position: relative;
+    top: 40px;
+  }
+
+  .contact__methods__phone {
+    display: flex;
+    position: relative;
+    top: 40px;
+    left: 2%;
+  }
+
+  .contact__methods__mailPhone {
+    color: #a5a5a5;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    left: 10px;
+  }
+
+  .contact__form {
+    position: relative;
+    top: 78%;
+    left: 50%;
+  }
+
+  .contact__form .nameLabel {
+    letter-spacing: 3.28px;
+    color: #08a6e4;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .contact__form #name {
+    opacity: .5;
+    border-color: #95989a;
+    border-top-style: none;
+    border-top-width: medium;
+    border-left-style: none;
+    border-left-width: medium;
+    border-right-style: none;
+    border-right-width: medium;
+    width: 23%;
+    padding: 10px;
+    position: relative;
+    top: 25px;
+  }
+
+  .contact__form .emailLabel {
+    letter-spacing: 3.28px;
+    color: #08a6e4;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-size: 11px;
+    font-weight: bold;
+    position: relative;
+    top: 60px;
+  }
+
+  .contact__form #email {
+    opacity: .5;
+    border-color: #95989a;
+    border-top-style: none;
+    border-top-width: medium;
+    border-left-style: none;
+    border-left-width: medium;
+    border-right-style: none;
+    border-right-width: medium;
+    width: 23%;
+    padding: 10px;
+    position: relative;
+    top: 80px;
+  }
+
+  .contact__form .contact__form__text {
+    color: #707070;
+    width: 34%;
+    height: 11%;
+    font-family: Open Sans;
+    font-size: 12px;
+    position: relative;
+    top: 90px;
+    left: 35px;
+  }
+
+  .contact__form #checkbox {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 121px;
+  }
+
+  .contact__form__button {
+    color: #fff;
+    background-color: #08a6e4;
+    border: #0000;
+    border-radius: 35px;
+    width: 15%;
+    height: 57px;
+    font-family: Open Sans;
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+    left: 17%;
+    box-shadow: 5px 10px 14px #07ace629;
+  }
+
+  .footer {
+    width: 100%;
+    position: relative;
+    top: 100%;
+    box-shadow: 0 -5px 40px #00000029;
+  }
+
+  .footer__logos {
+    display: flex;
+    position: relative;
+    bottom: 20px;
+    left: 20%;
+  }
+
+  .footer__logos__twitter {
+    position: relative;
+    left: 65%;
+  }
+
+  .footer__logos__facebook {
+    position: relative;
+    left: 66%;
+  }
+
+  .footer__header {
+    color: #08a6e4;
+    letter-spacing: 0;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 300;
+    position: relative;
+    top: 15px;
+    left: 60px;
+  }
+
+  .footer__text {
+    color: #a5a5a5;
+    font-family: Open Sans;
+    font-size: 11px;
+    position: relative;
+    top: 15px;
+    left: 60px;
+  }
+}
+
+
+
+/*# sourceMappingURL=index.c869e442.css.map */
