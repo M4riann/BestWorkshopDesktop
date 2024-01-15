@@ -1,0 +1,935 @@
+@mixin contentBackroundStylingDesktop {
+    width: 63px;
+    height: 63px;
+    background-color: #08A6E4;
+    border-radius: 50%;
+
+}
+
+@mixin contentTextStylingDesktop {
+
+    
+    color: #A5A5A5;
+    font: normal normal normal 17px/20px Raleway;
+}
+
+@mixin contentNumberStylingDesktop {
+    color: #000000;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 6px;
+}
+
+@mixin containerTitleStylingDesktop {
+    color: #000000;
+    font: normal normal normal 36px/35px Raleway;
+    font-weight: bolder;
+
+}
+
+@mixin containerTextStylingDesktop {
+    color: #000000;
+    font: normal normal normal 16px/22px Open Sans;
+
+
+}
+
+@mixin pricingContentStyling {
+    color: #000000;
+    font-size: 14px;
+    font-family: Open Sans;
+}
+
+
+
+@media screen and (min-width:420px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+
+        width: 100%;
+        height: 9%;
+        box-shadow: 0px 3px 6px #00000029;
+        position: absolute;
+
+        &__header {
+            font-family: Raleway;
+            font-weight: 300;
+            font-size: 32px;
+            color: #08A6E4;
+            letter-spacing: 0px;
+            position: relative;
+            left: 10%;
+            top: 25%;
+            width: 10%;
+        }
+
+        &__hamburgerMenu {
+            input {
+                display: none;
+            }
+
+            &__navbar {
+                position: absolute;
+                width: 100%;
+                top: 0%;
+                height: 100%;
+               
+
+                &__menu {
+                    height: 100%;
+                    margin-left: 50%;
+                    justify-content: space-evenly;
+                    display: flex;
+                    list-style: none;
+                    text-transform: uppercase;
+                    
+                    
+                    align-items: center;
+
+                    a {
+                        text-decoration: none;
+                        font-family: Open Sans;
+                        text-transform: uppercase;
+                        letter-spacing: 3.28px;
+                        
+                        color: #A5A5A5;
+                        font-size: 11px;
+                        font-weight: bold;
+                        text-align: center;
+                        
+                        display: inline-block;
+                        
+                    }
+                    
+
+                    a:hover {
+                        border-bottom: 4px solid #08A6E4;
+                        color: #000000;
+                        
+                    }
+                }
+            }
+
+        }
+
+
+
+
+    }
+
+    .mainContent {
+        position: relative;
+        top: 20%;
+        width: 100%;
+        height: 14.4%;
+        text-align: center;
+
+        &__title {
+            text-align: center;
+            color: #000000;
+            font-family: Raleway;
+            font-size: 49px;
+            font-weight: bold;
+            margin-bottom: 1%;
+        }
+
+        &__description {
+            text-align: center;
+            color: #000000;
+            font-size: 16px;
+
+            font-family: Open Sans;
+            margin-bottom: 30px;
+        }
+
+        &__button {
+            background-color: #08A6E4;
+            border: transparent;
+            border-radius: 40px;
+            box-shadow: 5px 10px 14px #07ACE629;
+            color: #FFFFFF;
+            text-align: center;
+            font: normal normal bold 16px/22px Open Sans;
+            width: 30%;
+            height: 60%;
+        }
+
+    }
+
+    .content__image {
+        position: relative;
+        top: 30%;
+        background-size: cover;
+        height: 60%;
+        background-image: url(../assets/Background.png);
+        overflow: hidden;
+        width: 100%;
+        background-position-x: center;
+        background-repeat: no-repeat;
+    }
+
+    .content {
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+        top: 27%;
+        width: 100%;
+        height: 60%;
+        margin: 0;
+
+        &__entries {
+            height: 30%;
+            width: 12%;
+            &__backround {
+                width: 63px;
+                height: 63px;
+                background-color: #FB3B64;
+                border-radius: 50%;
+
+                &__number {
+                    color: #000000;
+                    text-align: center;
+                    font-family: Raleway;
+                    font-size: 20px;
+                    font-weight: bolder;
+                    letter-spacing: 5.96px;
+                    position: relative;
+                    right: 30%;
+                    top: 15px;
+                }
+
+                &__text {
+                    color: #A5A5A5;
+                    font: normal normal normal 17px/20px Raleway;
+                    width: 100px;
+                    position: relative;
+                    right: 20%;
+                    top: 25px;
+                }
+
+                &__image {
+                    width: 44px;
+                    height: 52px;
+                    position: relative;
+                    left: 40%;
+                }
+
+            }
+        }
+
+        &__products {
+            height: 30%;
+            width: 12%;
+            &__backround {
+                @include contentBackroundStylingDesktop;
+                background-color: #08A6E4;
+
+                &__image {
+                    width: 66px;
+                    position: relative;
+                    left: 40%;
+                    height: 37px;
+                    top: 15px;
+                    left: 20px;
+                }
+
+                &__number {
+                    @include contentNumberStylingDesktop;
+                    position: relative;
+                    top: 25px;
+                    right: 33px;
+                }
+
+                &__text {
+
+                    @include contentTextStylingDesktop;
+                    width: 150px;
+                    text-align: center;
+                    position: relative;
+                    top: 35px;
+                    right: 45px;
+                }
+
+            }
+
+
+        }
+
+        &__posts {
+            height: 30%;
+            width: 12%;
+            &__backround {
+                @include contentBackroundStylingDesktop;
+                background-color: #55DFB4;
+
+                &__image {
+                    width: 52px;
+                    height: 48px;
+                    position: relative;
+                    left: 35px;
+                    top: 8px;
+                }
+
+                &__number {
+                    @include contentNumberStylingDesktop;
+                    position: relative;
+                    top: 13px;
+                    right: 7px;
+                }
+
+                &__text {
+                    @include contentTextStylingDesktop;
+                    width: 100px;
+                    text-align: center;
+                    position: relative;
+                    top: 20px;
+                    right: 10px;
+                }
+            }
+        }
+    }
+
+    .contentTitle {
+        position: absolute;
+        left: 15%;
+        top:10%;
+        width: 100%;
+        height: 20%;
+        &__text {
+            
+            
+            
+            text-align: center;
+            height: auto;
+            width: 70%;
+            left: 15%;
+            color: black;
+            font: normal normal normal 36px/35px Raleway;
+            font-weight: bold;
+            overflow: hidden;
+        }
+    }
+
+    .container {
+        position: relative;
+        top: 30%;
+        left: 15%;
+        width: 70%;
+        height:44%;
+        border: 1px solid #E8E9ED;
+        border-radius: 5px;
+
+        &__image {
+            width: 35%;
+            height: 65%;
+            background-image: url(../assets/Macbook.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            left: 60%;
+            top: 90px;
+        }
+
+        &__image::before {
+            display: inline-block;
+            content: "";
+            width: 50%;
+            height: 70%;
+            border-radius: 41px;
+            background-color: #FB3B64;
+            color: red;
+            position: relative;
+            bottom: 15%;
+            left: 55%;
+            z-index: -1;
+            rotate: (45deg);
+        }
+
+        &__title {
+            @include containerTitleStylingDesktop;
+            width: 45%;
+            position: relative;
+            bottom: 44%;
+            left: 4%;
+        }
+
+        &__text {
+            @include containerTextStylingDesktop;
+
+            width: 47%;
+            position: relative;
+            left: 4%;
+            bottom: 35%;
+            text-align: left;
+        }
+
+        &__underline {
+            width: 35%;
+            height: 2px;
+            background-color: #FB3B64;
+            border: 1px solid #FB3B64;
+            position: relative;
+            left: 4%;
+            bottom: 22%;
+        }
+    }
+
+    .second__container {
+        position: relative;
+        top: 35%;
+        height: 44%;
+        left: 15%;
+        width: 70%;
+        border: 1px solid #E8E9ED;
+        border-radius: 5px;
+
+        &__image {
+            background-image: url(../assets/iPhone2.png);
+            width: 40%;
+            height: 80%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: relative;
+            top: 12%;
+            left: 8%;
+        }
+
+        &__image::before {
+            display: inline-block;
+            content: "";
+            width: 60%;
+            height: 100%;
+            background-color: #07ACE6;
+            z-index: -1;
+            position: relative;
+            border-radius: 50%;
+            bottom: 8%;
+            right: 5%;
+        }
+
+        &__title {
+            @include containerTitleStylingDesktop;
+            position: relative;
+            left: 65%;
+            width: 34%;
+            bottom: 65%;
+        }
+
+        &__text {
+            @include containerTextStylingDesktop;
+            position: relative;
+            left: 65%;
+            bottom: 55%;
+            width: 30%;
+        }
+
+        &__underline {
+            width: 25%;
+            height: 2px;
+            background-color: #08A6E4;
+            border: 1px solid #08A6E4;
+            position: relative;
+            left: 65%;
+            bottom: 45%;
+        }
+    }
+
+    .third__container {
+        position: relative;
+        top: 40%;
+
+        height: 44%;
+        left: 15%;
+        width: 70%;
+        border: 1px solid #E8E9ED;
+        border-radius: 5px;
+
+        &__image {
+            position: relative;
+            left: 65%;
+            bottom: 31.5%;
+            background-color: #55DFB4;
+            width: 35%;
+            height: 100%;
+            border: 1px solid #E8E9ED;
+            border-radius: 5px;
+
+            &__backround {
+                position: relative;
+                
+                top: 30%;
+                width: 90%;
+                height: 65%
+            }
+
+        }
+
+        &__underline {
+            width: 25%;
+            height: 2px;
+            background-color: #55DFB4;
+            border: 1px solid #55DFB4;
+            position: relative;
+            left: 4%;
+            bottom: 55%;
+        }
+
+        &__title {
+            @include containerTitleStylingDesktop;
+            width: 56%;
+            position: relative;
+            top: 20%;
+            left: 4%;
+        }
+
+        &__text {
+            @include containerTextStylingDesktop;
+            position: relative;
+            width: 55%;
+            top: 30%;
+            left: 4%;
+        }
+    }
+    .pricingHeader{
+        
+            text-align: center;
+            color: #000000;
+            font-size: 36px;
+            font-weight: bold;
+            font-family: Raleway;
+            position: relative;
+            left: 0%;
+            top: 70%;
+            height:7%;
+        
+    }
+    .pricing {
+        position: relative;
+        top: 65%;
+        width: 80%;
+        height: 80%;
+        left: 10%;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+
+        
+
+        &__basic {
+            width: 20%;
+            height: 70%;
+            border: 1px solid #FB3B64;
+            border-radius: 18px;
+
+            &__title {
+                color: #13253B;
+                width: 38%;
+                height: 5%;
+                font-size: 20px;
+                font-weight: bolder;
+                font-family: Raleway;
+                position: relative;
+                left: 40%;
+                top: 5%
+            }
+
+            &__price {
+                color: #FB3B64;
+                font-size: 46px;
+                font-family: Open Sans;
+                font-weight: 300;
+                position: relative;
+                top: 10%;
+                left: 35%;
+                width: 25%;
+                height: 10%;
+                text-align: center;
+            }
+
+            &__content {
+                position: relative;
+                top: 20%;
+                left: 22%;
+                @include pricingContentStyling;
+                width: 50%;
+                text-align: center;
+                line-height: 3.5;
+                width: 60%;
+
+            }
+
+           
+
+        }
+        .checkmark{
+            position: relative;
+            right: 5%;
+            
+        }
+
+        .pricing__basic::before {
+            content: "Begin";
+            width: 200px;
+            height: 200px;
+            background-color: #EB476E;
+            position: relative;
+            top: 98%;
+            left: 23%;
+            padding-left: 20%;
+            padding-right: 20%;
+            ;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            border-radius: 23px;
+            color: #FFFFFF;
+            font-size: 13px;
+            font-family: Open Sans;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        &__professional {
+            width: 27%;
+            height: 80%;
+            border: 1px solid #07ACE6;
+            border-radius: 18px;
+            box-shadow: 5px 10px 27px #07ACE629;
+
+        &__title {
+            font-size: 21px;
+            position: relative;
+            text-align: center;
+            top:5%;
+            color: #13253B;
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: Raleway; 
+            }
+
+            .professionalPrice {
+                color: #07ACE6;
+                
+                font-size: 46px;
+                font-family: Open Sans;
+                font-weight: 300;
+                position: relative;
+                top: 10%;
+                left: 34%;
+                width: 25%;
+                height: 10%;
+                text-align: center;
+            }
+
+            &__text {
+                color: #13253B;
+                font-size: 12px;
+                font-weight: bolder;
+                font-family: Raleway;
+                position: relative;
+                left: 40%;
+                top: 14%;
+                width: 25%;
+            }
+
+            &__content{
+                line-height: 3.5;
+                position: relative;
+                top: 20%;
+                left: 22%;
+                @include pricingContentStyling;
+                width: 50%;
+                text-align: center;
+                
+                width: 60%;
+            }
+        
+
+            
+
+        }
+
+        .pricing__professional::before {
+            content: "Begin";
+            width: 200px;
+            height: 200px;
+            background-color: #07ACE6;
+            position: relative;
+            top: 98%;
+            left: 26%;
+            padding-left: 17%;
+            padding-right: 17%;
+            ;
+            padding-top: 4.3%;
+            padding-bottom: 4.3%;
+            border-radius: 23px;
+            color: #FFFFFF;
+            font-size: 13px;
+            font-family: Open Sans;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 5px 10px 14px #07ACE629;
+        }
+
+        &__premium {
+
+            border: 1px solid #07ACE6;
+            border-radius: 18px;
+            width: 20%;
+            height: 70%;
+            border: 1px solid #55DFB4;
+            border-radius: 18px;
+
+            .premiumTitle {
+                font-size: 21px;
+                position: relative;
+                text-align: center;
+                top:5%;
+                color: #13253B;
+                font-size: 20px;
+                font-weight: bolder;
+                font-family: Raleway;
+                
+            }
+
+            .premiumPrice {
+                position: relative;
+                left: 37%;
+                color: #55DFB4;
+                text-align: center;
+                width: 25%;
+                height: 10%;
+                font-family: Open Sans;
+                font-size: 46px;
+                font-weight: 300;
+                
+                top: 10%;
+               
+            }
+
+            .premiumText {
+                position: relative;
+                left: 40%;
+            }
+
+            
+            &__content {
+            line-height: 3.5;
+            position: relative;
+            top: 22%;
+            left: 22%;
+            @include pricingContentStyling;
+            width: 50%;
+            text-align: center;
+            
+            width: 60%;
+            }
+            
+        }
+
+        .pricing__premium::before {
+            content: "Begin";
+            width: 200px;
+            height: 200px;
+            background-color: #55DFB4;
+            position: relative;
+            top: 98%;
+            left: 26%;
+            padding-left: 17%;
+            padding-right: 17%;
+            ;
+            padding-top: 4.3%;
+            padding-bottom: 4.3%;
+            border-radius: 23px;
+            color: #FFFFFF;
+            font-size: 13px;
+            font-family: Open Sans;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 5px 10px 14px #07ACE629;
+        }
+    }
+
+
+    .contact {
+        position: relative;
+        top: 90%;
+        left: 25%;
+
+        h2 {
+            color: #000000;
+            font-size: 49px;
+            font-family: Raleway;
+            font-weight: normal;
+            width: 25%;
+        }
+
+        &__text {
+            color: #000000;
+            font-size: 16px;
+            font-family: Open Sans;
+            font-weight: normal;
+            position: relative;
+            top: 15px;
+            width: 20%;
+        }
+
+        &__methods {
+            display: flex;
+            &__mail {
+                display: flex;
+                position: relative;
+                top: 40px;
+            }
+
+            &__phone {
+                position: relative;
+                top:40px;
+                left: 2%;
+                display: flex;
+            }
+
+            &__mailPhone {
+                color: #A5A5A5;
+                font-size: 16px;
+                font-weight: 600;
+                font-family: Open Sans;
+                position: relative;
+                left: 10px;
+            }
+        }
+        
+
+    }
+
+    .contact__form {
+        position: relative;
+        top: 78%;
+        left: 50%;
+        .nameLabel{
+            font-size: 11px;
+            font-weight: bold;
+            font-family: Open Sans;
+            letter-spacing: 3.28px;
+            color:#08A6E4;
+            text-transform: uppercase;
+        }
+        #name{
+            position: relative;
+            border-top:none;
+            border-left: none;
+            border-right: none;
+            top:25px;
+            border-color:#95989A;
+            opacity: 0.5;
+            width: 23%;
+            padding: 10px;
+        }
+        .emailLabel{
+            position: relative;
+            top:60px;
+            font-size: 11px;
+            font-weight: bold;
+            font-family: Open Sans;
+            letter-spacing: 3.28px;
+            color:#08A6E4;
+            text-transform: uppercase;
+        }
+        #email{
+            position: relative;
+            top:80px;
+            border-top:none;
+            border-left: none;
+            border-right: none;
+            border-color:#95989A;
+            opacity: 0.5;
+            width: 23%;
+            padding: 10px;
+        }
+        .contact__form__text{
+            position: relative;
+            top:90px;
+            left: 35px;
+            color:#707070;
+            font-family: Open Sans;
+            font-size: 12px;
+            width: 34%;
+            height: 11%;
+        }
+        #checkbox{
+            position: relative;
+            top:121px;
+            width: 24px;
+            height: 24px;
+        }
+        &__button{
+            position: relative;
+            top:100px;
+            left: 17%;
+            background-color:#08A6E4;
+            box-shadow: 5px 10px 14px #07ACE629;
+            border-radius: 35px;
+            width: 15%;
+            height: 57px;
+            color: white;
+            border: transparent;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: Open Sans;
+        }
+    }
+    .footer {
+        position: relative;
+        top: 100%;
+        width: 100%;
+        
+        box-shadow: 0px -5px 40px #00000029;
+        &__logos{
+            display: flex;
+            position: relative;
+            left: 20%;
+            bottom: 20px;
+            &__twitter{
+                position: relative;
+                left: 65%;
+            }
+            &__facebook{
+                position: relative;
+                left: 66%;
+            }
+        }
+        &__header{
+            color: #08a6e4;
+            letter-spacing: 0;
+            font-family: Raleway;
+            font-size: 26px;
+            font-weight: 300;
+            position: relative;
+            left: 60px;
+            top:15px;
+        }
+        &__text{
+            font-size: 11px;
+            font-family: Open Sans;
+            color:#A5A5A5;
+            position: relative;
+            left: 60px;
+            top:15px;
+        }
+    }
+}
+    
+
+    
+
